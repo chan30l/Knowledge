@@ -17,7 +17,7 @@ import java.awt.event.ActionListener;
 /**
  * @program: classprogram
  * @Description:登陆界面，通过监听登录按钮跳到管理界面，其中登录文件信息保存在information.txt文件，管理信息保存在mangerinformation.txt。
- * @author: qjh
+ * @author: cl
  * @date: 2019-12-17
  */
 public class LoginForm extends JFrame {
@@ -100,7 +100,7 @@ public class LoginForm extends JFrame {
      * @Description: 设置界面可见
      * @Param: [visible]
      * @return: void
-     * @Author: qjh
+     * @Author: cl
      * @Date: 2019-12-17
      */
     public void setFrameLoginVisible(Boolean visible){
@@ -117,7 +117,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 /**
- * @author :qjh
+ * @author :cl
  * @DATE:2019-12-17
  * @Description:管理员界面，通过监听修改按钮跳到密码修改成功界面
  */
@@ -310,7 +310,7 @@ import loginform.LoginForm;
 /**
  * @program: classprogram
  * @Description:
- * @author: qjh
+ * @author: cl
  * @date: 2019-12-17
  */
 public class Manage {
