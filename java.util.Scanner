@@ -1,0 +1,64 @@
+package classbook.shapes.six;
+import java.util.Scanner;
+
+/**
+ * @author :cl
+ * description:抽象类
+ * Date:2019-11-9
+ */
+class Square extends Shapes {
+
+    void draw(){
+      System.out.println("你好,大姨妈！");
+    }
+
+    void erase(){
+        System.out.println("你好，二姨妈！");
+    }
+
+}
+public class Circle extends Shapes {
+    void draw(){
+        System.out.println("你好，三姨妈！");
+    }
+    void erase(){
+        System.out.println("你好，小姨妈！");
+    }
+}
+
+
+abstract class Shape{
+    /**
+     *
+     */
+    abstract void draw();
+    abstract void erase();
+}
+
+public class Shapes {
+    int number;
+    public static void main(String[] args){
+        Square square = new Square();
+        Circle circle = new Circle();
+        System.out.println("输入数字0至3）");
+        Scanner scan = new Scanner(System.in);
+        int number = scan.nextInt();
+        switch (number){
+            case 0:
+                square.draw();
+                break;
+            case 1:
+                square.erase();
+                break;
+            case 2:
+                circle.draw();
+                break;
+            case 3:
+                circle.erase();
+                break;
+            default:
+                System.out.println("数字有误，结束进程！");
+        }
+
+    }
+}
